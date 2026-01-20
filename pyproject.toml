@@ -3,17 +3,12 @@ name = "samsite"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-authors = [
-    { name = "s-hewitt", email = "samuel.hewitt0@gmail.com" }
-]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "django>=6.0.1",
+]
 
-[build-system]
-requires = ["uv_build>=0.9.26,<0.10.0"]
-build-backend = "uv_build"
-
-[tool.uv.workspace]
-members = [
-    "samsite",
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
 ]
